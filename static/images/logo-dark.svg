@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" aria-label="MCH Anaesthesia">
+  <!-- Circle background (lighter for dark mode) -->
+  <circle cx="20" cy="20" r="18" fill="#1D4ED8"/>
+  <!-- Stylised sedation / EEG waveform -->
+  <polyline
+    points="4,20 8,20 10,14 12,26 14,20 18,20 20,15 22,25 24,20 28,20 30,17 32,23 34,20 36,20"
+    fill="none"
+    stroke="#BFDBFE"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>

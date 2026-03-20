@@ -1,23 +1,58 @@
-baseURL: https://example.org/
+baseURL: https://resources.mch-anaesthesia.org/
 
 languageCode: en-us
+defaultContentLanguage: en
 
-title: My New Hugo Site
+title: MCH Anaesthesia Resources
 
 module:
   imports:
     - path: github.com/imfing/hextra
 
+menu:
+  main:
+    - name: Protocol
+      pageRef: /docs/protocol
+      weight: 1
+    - name: Patient Selection
+      pageRef: /docs/patient-selection
+      weight: 2
+    - name: Troubleshooting
+      pageRef: /docs/troubleshooting
+      weight: 3
+    - name: FAQ
+      pageRef: /docs/faq
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: GitHub
+      weight: 6
+      url: "https://github.com/mch-anaesthesia/resources-static-site-mch"
+      params:
+        icon: github
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      link: /
+      width: 40
+      height: 40
 
   footer:
     displayCopyright: false
-    displayPoweredBy: true
+    displayPoweredBy: false
 
   editURL:
     enable: true
-    base: "https://github.com/mch-anaesthesia/hextra-starter-template/edit/main/content"
+    base: "https://github.com/mch-anaesthesia/resources-static-site-mch/edit/main/content"
