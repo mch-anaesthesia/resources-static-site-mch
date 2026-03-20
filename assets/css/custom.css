@@ -2,12 +2,27 @@
    Warning banner — Bootstrap-style amber alert
    ============================================================ */
 .hextra-banner {
-  position: sticky !important;
   background-color: #fff3cd !important;
   color: #664d03 !important;
   border-bottom: 1px solid #fde68a !important;
+  /* Sit below the page content so content scrolls over it,
+     while the navbar (z-20) remains above everything */
+  z-index: 1 !important;
 }
 
 .hextra-banner-close-button {
   color: #664d03 !important;
+}
+
+/* Give the page content an opaque background and a z-index
+   above the banner (1) but below the navbar (20), so that
+   scrolling the page visually covers the banner */
+.hextra-max-page-width {
+  position: relative;
+  z-index: 5;
+  background-color: #ffffff;
+}
+
+.dark .hextra-max-page-width {
+  background-color: #111111;
 }
