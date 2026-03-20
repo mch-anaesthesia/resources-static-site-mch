@@ -53,6 +53,9 @@ params:
     displayCopyright: false
     displayPoweredBy: false
 
+  banner:
+    message: "⚠ **Testing only** — This site is not approved for clinical use. Do not use for patient care decisions."
+
   editURL:
     enable: true
     base: "https://github.com/mch-anaesthesia/resources-static-site-mch/edit/main/content"

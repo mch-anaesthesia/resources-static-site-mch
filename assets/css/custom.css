@@ -1,33 +1,12 @@
 /* ============================================================
-   Testing banner
+   Warning banner — Bootstrap-style amber alert
    ============================================================ */
-.testing-banner {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 1.25rem;
-  background-color: #b91c1c;
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-align: center;
-  justify-content: center;
-  letter-spacing: 0.01em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+.hextra-banner {
+  background-color: #fff3cd !important;
+  color: #664d03 !important;
+  border-bottom: 1px solid #fde68a !important;
 }
 
-.testing-banner__icon {
-  font-size: 1.05rem;
-}
-
-/* ============================================================
-   General site tweaks
-   ============================================================ */
-
-/* Slightly warmer callout for clinical warnings */
-.hextra-callout[data-type="warning"] {
-  border-left-color: #d97706;
+.hextra-banner-close-button {
+  color: #664d03 !important;
 }
