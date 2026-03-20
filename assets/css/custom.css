@@ -2,6 +2,7 @@
    Warning banner — Bootstrap-style amber alert
    ============================================================ */
 .hextra-banner {
+  position: sticky !important;
   background-color: #fff3cd !important;
   color: #664d03 !important;
   border-bottom: 1px solid #fde68a !important;
